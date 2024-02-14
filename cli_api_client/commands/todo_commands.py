@@ -1,7 +1,7 @@
 import click
-from di.injector import configure_injector
-from services.todo_service import TodoService
-from utlis.display_formatter import DisplayFormatter
+from cli_api_client.di.injector import configure_injector
+from cli_api_client.services.todo_service import TodoService
+from cli_api_client.utlis.display_formatter import DisplayFormatter
 
 injector = configure_injector()
 

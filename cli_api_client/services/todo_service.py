@@ -1,5 +1,5 @@
 from injector import inject
-from services.api_service import ApiService
+from cli_api_client.services.api_service import ApiService
 
 class TodoService:
     base_url = f"https://jsonplaceholder.typicode.com/todos"
