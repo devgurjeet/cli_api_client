@@ -1,18 +1,18 @@
 # main.py
 
 import click
-from di.injector import configure_injector
+from cli_api_client.di.injector import configure_injector
 
 # Configuring the dependency injection
 configure_injector()
 
 # Importing commands
-from commands.todo_commands import todos
+from cli_api_client.commands.todo_commands import todos
 
 # Adding commands to the main CLI
 @click.group()
 def cli():
-    pass
+    print("Todos Client.")
 
 cli.add_command(todos)
 

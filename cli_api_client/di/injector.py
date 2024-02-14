@@ -1,7 +1,7 @@
 # injector.py
 
 from injector import Injector, Module, inject
-from services.api_service import ApiService
+from cli_api_client.services.api_service import ApiService
 
 class AppModule(Module):
     @inject
