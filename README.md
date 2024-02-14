@@ -5,8 +5,10 @@
 ## Table of Contents
 - [Project Structure](#project-structure)
 - [Installation](#installation)
+- [Setup](#setup)
 - [Usage](#usage)
 - [Tests](#tests)
+- [Docker](#docker)
 
 ## Project Structure
 
@@ -48,6 +50,11 @@ Clone the repository:
 
 ```pip install -r requirements.txt```
 
+## Setup
+
+```export PYTHONPATH=/path/to/your/project_root:$PYTHONPATH```
+
+## Usage
 
 ## Running the CLI
 > Execute the main.py script to run the CLI:
@@ -72,3 +79,14 @@ python main.py
 > Run tests using pytest:
 
 ```pytest tests/```
+
+## Docker
+
+#### Docker Build 
+```docker build -t cli-api-client .``` 
+
+#### Docker run
+``` docker run cli-api-client```
+
+#### Verify the Container Contents
+```docker run -it --entrypoint /bin/bash cli-api-client```
