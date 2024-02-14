@@ -64,7 +64,7 @@ python main.py
 ```
 ## Exercise
 > command line tool that consumes the first 20 even numbered TODO's :
-> ```python main.py even 20```
+> ```python main.py todos even 20```
 
 
 ## Available Commands
